@@ -1,30 +1,32 @@
 import { motion } from "framer-motion";
 
-const Transition = () => {
-  return (
-    <div>
-      <motion.div
-        className="fixed z-45 top-0 left-0 w-[100%] h-[100%] bg-black origin-bottom"
-        initial={{ scaleY: 0 }}
-        animate={{ scaleY: 0 }}
-        exit={{ scaleY: 1 }}
-        transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-      ></motion.div>
+const Transition = (Component) => {
+  return function Transitioned() {
+    return (
+      <div>
+		<Component/>
+		
+        <motion.div
+          className="fixed z-45 top-0 left-0 w-[100%] h-[100%] bg-black origin-bottom"
+          initial={{ scaleY: 0 }}
+          animate={{ scaleY: 0 }}
+          exit={{ scaleY: 1 }}
+          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+        ></motion.div>
 
-      <motion.div
-        className="fixed z-45 top-0 left-0 w-[100%] h-[100%] bg-black origin-top"
-        initial={{ scaleY: 1 }}
-        animate={{ scaleY: 0 }}
-        exit={{ scaleY: 0 }}
-        transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-      ></motion.div>
-    </div>
-  );
+        <motion.div
+          className="fixed z-45 top-0 left-0 w-[100%] h-[100%] bg-black origin-top"
+          initial={{ scaleY: 1 }}
+          animate={{ scaleY: 0 }}
+          exit={{ scaleY: 0 }}
+          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+        ></motion.div>
+      </div>
+    );
+  };
 };
 
 export default Transition;
-
-
 
 // const parentVariant = {
 //   exit: {
@@ -50,7 +52,6 @@ export default Transition;
 // 	  },
 // 	},
 // };
-  
 
 // const exitVariant = {
 //   initial: { scaleY: 0 },
@@ -63,7 +64,6 @@ export default Transition;
 //   animate: { scaleY: 0 },
 //   exit: { scaleY: 0 },
 // };
-
 
 // const Transition = () => {
 //   return (

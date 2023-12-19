@@ -40,7 +40,7 @@ const MovingDiv = () => {
 
 const Skills = () => {
   return (
-    <div className="overflow-hidden">
+    <motion.div className="overflow-hidden">
       <div className="w-full h-[60vh] sm:h-[100vh] px-7 max-w-xl m-auto py-5 flex items-center relative">
         <MovingDiv />
 
@@ -53,7 +53,7 @@ const Skills = () => {
                 y: 70,
                 opacity: 0,
               }}
-			  viewport={{ once: true }}
+              viewport={{ once: true }}
               whileInView={{
                 transition: {
                   delay: i * 0.04,
@@ -68,7 +68,7 @@ const Skills = () => {
           ))}
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

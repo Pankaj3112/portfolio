@@ -50,14 +50,14 @@ const Footer = () => {
           type="text"
         />
 
-        <p className="mt-10">E-mail</p>
+        <p className="mt-5 sm:mt-10">E-mail</p>
         <input
           name="email"
           className="text-2xl bg-transparent border-b border-neutral-300 w-full outline-none"
           type="email"
         />
 
-        <p className="mt-10">Message</p>
+        <p className="mt-5 sm:mt-10">Message</p>
         <textarea
           name="message"
           className="text-2xl bg-transparent border-b border-neutral-300 w-full outline-none h-8"
@@ -65,7 +65,7 @@ const Footer = () => {
 
         <button
           type="submit"
-          className="mt-10 border border-neutral-500 rounded-full px-4 py-2 pt-1 bg-white bg-opacity-10 backdrop-blur-lg hover:border-neutral-200"
+          className="mt-5 sm:mt-10 border border-neutral-500 rounded-full px-4 py-2 pt-1 bg-white bg-opacity-10 backdrop-blur-lg hover:border-neutral-200"
         >
           Contact Me
         </button>

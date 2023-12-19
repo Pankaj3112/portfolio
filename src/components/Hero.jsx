@@ -4,13 +4,6 @@ import { MoveDown } from "lucide-react";
 
 const transition = { duration: 1, ease: [0.6, 0.01, -0.05, 0.9] };
 
-const page = {
-  exit: {
-    transition: { duration: 0.7 },
-    opacity: 0,
-  },
-};
-
 const firstName = {
   animate: {
     transition: {
