@@ -1,7 +1,6 @@
 import React from "react";
 import { Github, Linkedin, Mail } from "lucide-react";
 import { motion } from "framer-motion";
-import Transition from "./Transition";
 import { Link } from "react-router-dom";
 import { links } from "../utils";
 
